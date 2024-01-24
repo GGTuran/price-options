@@ -1,9 +1,10 @@
 import PriceOption from "../PriceOption/PriceOption";
 
 
+
 const PriceOptions = () => {
-    {
-        const priceOptions = [
+    
+        const gymBroo = [
           {
             "id": 1,
             "name": "Fitness Paradise",
@@ -89,20 +90,18 @@ const PriceOptions = () => {
               "Recovery Lounge"
             ]
           }
-          // Add more gyms as needed
-        ]
-      }
+          
+        ];
+      
       
     return (
         <div>
 
             <h3 className="text-4xl">Being a Gymbro</h3>
             {
-                priceOptions.map(option => <PriceOption
-                key={option.id} 
-                option={option}
-                ></PriceOption>)
+                gymBroo.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
             }
+        
             
         </div>
     );

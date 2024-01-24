@@ -1,15 +1,13 @@
-import PropTypes from 'prop-types';
 
 const PriceOption = ({option}) => {
+    const{name, price} = option
     return (
         <div>
-            
+            {
+                <h2>{name}</h2>
+            }
         </div>
     );
 };
-
-PriceOption.propTypes = {
-    Option: PropTypes.object
-}
 
 export default PriceOption;
