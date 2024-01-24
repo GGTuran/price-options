@@ -28,7 +28,9 @@ const Navbar = () => {
                 }
 
             </div>
-           <ul className="md:flex justify-center">
+           <ul className={`md:flex absolute md:static
+           ${open ? '' : 'hidden'}
+            justify-center`}>
            {
                 routes.map(route => <Link
                 key={route.id}
